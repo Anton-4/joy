@@ -52,4 +52,4 @@ jobs:
 
       - run: |
           export PATH="$PWD/roc_nightly:$PATH"
-          ./ci_scripts/all_tests.sh
+          ./CI/all_tests.sh
