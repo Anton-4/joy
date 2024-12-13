@@ -24,7 +24,10 @@ jobs:
 
       - run: sudo apt -y install inotify-tools
 
-      - run: cargo binstall watchexec-cli
+      - name: install watchexec-cli
+        run: |
+          curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+          cargo binstall watchexec-cli
 
       - id: try_fetching_testing_release
         continue-on-error: true
