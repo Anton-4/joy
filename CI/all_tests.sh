@@ -21,7 +21,7 @@ while true; do
         break
     fi
 
-    sleep 5
+    sleep 10
 done
 
 curl -sS localhost:3000 | grep demo
